@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ios-rocket-512.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
