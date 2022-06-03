@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct listGridView: View {
-    @Binding var thisWeekGames : [GameInfo]
+    @State var thisWeekGames = GamesClassification().thisWeekGame
     var body: some View {
         ForEach(thisWeekGames.indices, id: \.self){ index in
             HStack(spacing: 20){
@@ -51,6 +51,6 @@ struct listGridView: View {
 
 struct listGridView_Previews: PreviewProvider {
     static var previews: some View {
-        listGridView(thisWeekGames: .constant(GamesClassification().thisWeekGame))
+        listGridView()
     }
 }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct cardView: View {
-    @State var thisWeekGames = GamesClassification().thisWeekGame
     var title : String
     var subTitle : String
     var style : Int
@@ -25,7 +24,7 @@ struct cardView: View {
                 .padding()
                 //style1: listGridView
                 if style == 1{
-                    listGridView(thisWeekGames: $thisWeekGames)
+                    listGridView()
                     Spacer()
                         .frame(width: 0, height: 0)
                         .padding([.bottom],30)
