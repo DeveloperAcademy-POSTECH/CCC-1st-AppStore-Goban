@@ -27,6 +27,7 @@ struct listGridView: View {
                         VStack{
                             Button(action: {}) {
                                 Text("받기")
+                                    .fontWeight(.bold)
                             }
                             .padding([.horizontal],25)
                             .padding([.vertical],5)
