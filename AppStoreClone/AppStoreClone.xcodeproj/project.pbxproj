@@ -10,7 +10,10 @@
 		913FD0F7284779B700E46829 /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FD0F6284779B700E46829 /* cardView.swift */; };
 		913FD0F928477D4700E46829 /* cardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FD0F828477D4700E46829 /* cardImageView.swift */; };
 		913FD0FC2847853800E46829 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FD0FB2847853800E46829 /* utils.swift */; };
+		9189819C284A48050026DD6B /* listGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189819B284A48050026DD6B /* listGridView.swift */; };
 		91A78354284723B500E14CBA /* todayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A78353284723B500E14CBA /* todayView.swift */; };
+		91CEDC012847923900D605DA /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEDC002847923900D605DA /* Apps.swift */; };
+		91CEDC032847924400D605DA /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEDC022847924400D605DA /* Games.swift */; };
 		91E41D452846303F0042FCB8 /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E41D442846303F0042FCB8 /* AppStoreCloneApp.swift */; };
 		91E41D472846303F0042FCB8 /* tabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E41D462846303F0042FCB8 /* tabbarController.swift */; };
 		91E41D49284630400042FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E41D48284630400042FCB8 /* Assets.xcassets */; };
@@ -21,7 +24,10 @@
 		913FD0F6284779B700E46829 /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 		913FD0F828477D4700E46829 /* cardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardImageView.swift; sourceTree = "<group>"; };
 		913FD0FB2847853800E46829 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		9189819B284A48050026DD6B /* listGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listGridView.swift; sourceTree = "<group>"; };
 		91A78353284723B500E14CBA /* todayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayView.swift; sourceTree = "<group>"; };
+		91CEDC002847923900D605DA /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
+		91CEDC022847924400D605DA /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		91E41D412846303F0042FCB8 /* AppStoreClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E41D442846303F0042FCB8 /* AppStoreCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneApp.swift; sourceTree = "<group>"; };
 		91E41D462846303F0042FCB8 /* tabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbarController.swift; sourceTree = "<group>"; };
@@ -48,6 +54,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		91CEDBFF2847920300D605DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91CEDC002847923900D605DA /* Apps.swift */,
+				91CEDC022847924400D605DA /* Games.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		91E41D382846303F0042FCB8 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +82,13 @@
 		91E41D432846303F0042FCB8 /* AppStoreClone */ = {
 			isa = PBXGroup;
 			children = (
+				91CEDBFF2847920300D605DA /* Model */,
 				913FD0FA2847850400E46829 /* Util */,
 				91E41D442846303F0042FCB8 /* AppStoreCloneApp.swift */,
 				91E41D462846303F0042FCB8 /* tabbarController.swift */,
 				91A78353284723B500E14CBA /* todayView.swift */,
 				913FD0F6284779B700E46829 /* cardView.swift */,
+				9189819B284A48050026DD6B /* listGridView.swift */,
 				913FD0F828477D4700E46829 /* cardImageView.swift */,
 				91E41D48284630400042FCB8 /* Assets.xcassets */,
 				91E41D4A284630400042FCB8 /* Preview Content */,
@@ -157,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9189819C284A48050026DD6B /* listGridView.swift in Sources */,
 				91E41D472846303F0042FCB8 /* tabbarController.swift in Sources */,
 				913FD0FC2847853800E46829 /* utils.swift in Sources */,
 				91E41D452846303F0042FCB8 /* AppStoreCloneApp.swift in Sources */,
+				91CEDC032847924400D605DA /* Games.swift in Sources */,
+				91CEDC012847923900D605DA /* Apps.swift in Sources */,
 				91A78354284723B500E14CBA /* todayView.swift in Sources */,
 				913FD0F928477D4700E46829 /* cardImageView.swift in Sources */,
 				913FD0F7284779B700E46829 /* cardView.swift in Sources */,
