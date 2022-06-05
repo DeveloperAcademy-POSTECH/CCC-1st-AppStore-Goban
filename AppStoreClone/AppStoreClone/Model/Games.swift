@@ -6,14 +6,13 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct GamesClassification{
     let firstGame: GameInfo
     let thisWeekGame: [GameInfo]
     let CollectionGame: [GameInfo]
     init(){
-        let GameInfo1 = GameInfo(id: 1, title: "원신", subTitle: "미호요 오픈월드 액션 RPG", thumbNali: "InstagramImage")
+        let GameInfo1 = GameInfo(id: 1, title: "디아블로 이모탈", subTitle: "전리품, 커스터마이징과 탐험", thumbNali: "diabloAppIconImage")
         let GameInfo2 = GameInfo(id: 2, title:"리니지M", subTitle: "LEGACY: 위대한 유산 업데이트", thumbNali: "lineageImage")
         let GameInfo3 = GameInfo(id: 3, title:"히어로 테일즈", subTitle: "스카이워커여, 신성무기를 모여 하늘성을 구해라!", thumbNali: "herotalesImage")
         let GameInfo4 = GameInfo(id: 4, title:"제2의 나라: Cross Worlds", subTitle: "마음속 깊이 간직했던 세계", thumbNali: "kunicrossworldsImage")

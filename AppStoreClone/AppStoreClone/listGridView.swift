@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct listGridView: View {
-    @State var thisWeekGames = GamesClassification().thisWeekGame
+    @State private var thisWeekGames = GamesClassification().thisWeekGame
     var body: some View {
         ForEach(thisWeekGames.indices, id: \.self){ index in
             HStack(spacing: 20){

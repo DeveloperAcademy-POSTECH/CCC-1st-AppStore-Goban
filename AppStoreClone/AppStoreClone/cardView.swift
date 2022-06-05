@@ -16,9 +16,10 @@ struct cardView: View {
                 VStack(alignment:.leading,spacing: 5){
                     Text(subTitle)
                         .foregroundColor(.gray)
-                        .font(.footnote)
+                        .font(.subheadline)
+                        .fontWeight(.bold)
                     Text(title)
-                        .font(.largeTitle)
+                        .font(.title)
                         .fontWeight(.bold)
                 }
                 .padding()
