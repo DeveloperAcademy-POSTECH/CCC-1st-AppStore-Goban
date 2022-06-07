@@ -11,29 +11,33 @@ struct todayView: View {
     @State private var todayStr : String = ""
     var body: some View {
         ScrollView{
-            VStack(alignment : .leading,spacing: 5){
-                Text("\(todayStr)")
-                    .foregroundColor(.gray)
-                    .font(.footnote)
-                HStack{
-                    Text("투데이")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    Spacer()
-                    Image(systemName: "person.crop.circle")
-                        .font(.largeTitle)
-                        .foregroundColor(.blue)
+            VStack(alignment : .leading,spacing: 0){
+                VStack(alignment: .leading){
+                    Text("\(todayStr)")
+                        .foregroundColor(.gray)
+                        .font(.footnote)
+                    HStack{
+                        Text("투데이")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Image(systemName: "person.crop.circle")
+                            .font(.largeTitle)
+                            .foregroundColor(.blue)
+                    }
                 }
+                .padding([.horizontal,.top])
                 //카드뷰 나열
-                cardView()
+                cardView(title: "이번 주 인기게임", subTitle: "요즘 화제", style: 1)
             }
-            .padding()
+
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .onAppear(perform: {
             //오늘 날짜 불러오기
             todayStr = getToday(toDayStr: &todayStr)
         })
+        .background(Color(UIColor.systemGray6))
     }
 }
 
