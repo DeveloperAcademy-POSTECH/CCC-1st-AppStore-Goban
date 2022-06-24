@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GamesClassification{
+struct GameList{
     let firstGame: GameInfo
     let thisWeekGame: [GameInfo]
     let CollectionGame: [GameInfo]

@@ -11,7 +11,7 @@ struct cardImageView: View {
     @State private var imageHeight = CGFloat(100)
     var title: String
     var subTitle: String
-    var firstGame = GamesClassification().firstGame
+    var firstGame = GameList().firstGame
     var body: some View {
         VStack(spacing: 10){
             GeometryReader{ proxy in
@@ -79,8 +79,8 @@ struct cardImageView: View {
                     }
                 }
             }
-            .padding([.horizontal],20)
-            .padding([.vertical],6)
+            .padding(.horizontal,20)
+            .padding(.vertical,6)
         }
         .background(
             RoundedRectangle(cornerRadius: 20)
