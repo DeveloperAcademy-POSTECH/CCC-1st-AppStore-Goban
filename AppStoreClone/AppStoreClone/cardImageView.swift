@@ -68,8 +68,8 @@ struct cardImageView: View {
                                 Text("받기")
                                     .fontWeight(.bold)
                             }
-                            .padding([.horizontal],25)
-                            .padding([.vertical],5)
+                            .padding(.horizontal,25)
+                            .padding(.vertical,5)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(20)
                             Text("앱 내 구입")
