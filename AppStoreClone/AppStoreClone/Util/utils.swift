@@ -7,11 +7,12 @@
 
 import Foundation
 
-func getToday(toDayStr: inout String)->String{
-    let todayNowDate = Date()
-    let todayDateFormatter = DateFormatter()
-    todayDateFormatter.locale = Locale(identifier: "ko_KR")
-    todayDateFormatter.dateFormat = "MMM d일 EEEE"
-    toDayStr = todayDateFormatter.string(from: todayNowDate)
-    return toDayStr
+extension Date {
+    func getToday() -> String {
+        let todayNowDate = Date()
+        let todayDateFormatter = DateFormatter()
+        todayDateFormatter.locale = Locale(identifier: "ko_KR")
+        todayDateFormatter.dateFormat = "MMM d일 EEEE"
+        return todayDateFormatter.string(from: todayNowDate)
+    }
 }
