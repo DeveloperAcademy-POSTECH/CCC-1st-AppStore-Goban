@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct todayView: View {
-    @State private var todayStr : String = ""
+    @State private var todayStr : String = Date().getToday()
     var body: some View {
         ScrollView{
             VStack(alignment : .leading,spacing: 0){
                 VStack(alignment: .leading){
-                    Text("\(todayStr)")
+                    Text(todayStr)
                         .foregroundColor(.gray)
                         .font(.footnote)
                     HStack{
@@ -28,16 +28,12 @@ struct todayView: View {
                 }
                 .padding([.horizontal,.top])
                 //카드뷰 나열
+                cardImageView(title: "디아블로 이모탈 새로운 지옥으로!", subTitle: "최초 공개")
                 cardView(title: "이번 주 인기게임", subTitle: "요즘 화제", style: 1)
             }
-
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .onAppear(perform: {
-            //오늘 날짜 불러오기
-            todayStr = getToday(toDayStr: &todayStr)
-        })
-        .background(Color(UIColor.systemGray6))
+        .background(Color(UIColor.systemGray6).opacity(0.6))
     }
 }
 
